@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+  <script src="/js/clientScript.js"></script> 
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      padding: 40px;
+      text-align: center;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #007bff;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>{{banner}}</h1>
+  <p>{{text}}</p>
+
+  <input type="text" id="locationInput" placeholder="Enter location" />
+  <button onclick="getWeather()">Search</button>
+
+  <div id="result" style="display:none; margin-top:20px;"></div>
+
+
+
+
+</body>
+</html>

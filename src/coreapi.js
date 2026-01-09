@@ -39,7 +39,7 @@ const buildGeoCodeURL = (location) => {
 
 const getCordinates = (location, callback) => {
     if (!location) {
-        console.log('Location cannot be empty to fetch coordinates');
+        //console.log('Location cannot be empty to fetch coordinates');
         return;
     }
 

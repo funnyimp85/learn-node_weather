@@ -24,7 +24,7 @@ function getWeather() {
         result.innerHTML = '<p>Please enter a location</p>';
         return;
     }
-    fetch(`http://localhost:3000/weather?address=${location}`).then((response) => {
+    fetch(`/weather?address=${location}`).then((response) => {
         response.json().then((forecast) => {
             console.log(forecast);
             if (forecast.error) {
